@@ -1,0 +1,14 @@
+var
+i,j,sum : INTEGER;
+r1,r2 :ARRAY_OF INTEGER;
+BEGIN
+sum:=0;
+FOR i from 0 to r1.length-1 step 1 DO
+FOR j FROM 0 to r2.length-1 step 1 DO
+IF (r1[i]<>r2[j])then
+sum:= sum+r1[i]+r2[j];
+END_IF
+END_FOR
+END_FOR
+write("the sum of the commun number is", sum);
+END
